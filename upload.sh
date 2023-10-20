@@ -1,6 +1,6 @@
 #!/bin/bash
 # Author: Gatovsky
-# usage: ./upload.sh -a files -c "some message"
+# usage: ./upload.sh -a file -c "some message"
 # for n files to add use --default
 # for specific files use the -a flag at the end
 
@@ -19,7 +19,7 @@ while [[ "${#}" -gt 0 ]]; do
             shift
             ;;
         --default)
-            git add .; git commit -m "commit upload"; git push
+            git add .; git commit -m "commit uploaded"; git push
             exit 0
             ;;
         -* | --*)
