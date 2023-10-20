@@ -1,6 +1,8 @@
 #!/bin/bash
 # Author: Gatovsky
 # usage: ./upload.sh -a files -c "some message"
+# for n files to add use --default
+# for specific files use the -a flag at the end
 
 POSITIONAL_ARGS=()
 
