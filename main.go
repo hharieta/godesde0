@@ -33,4 +33,5 @@ func main() {
 
 	funciones.Calculos()
 	funciones.LlamarClosure()
+	funciones.Exponente(2)
 }
