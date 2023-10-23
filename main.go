@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/hharieta/godesde0/ejercicios"
+	"github.com/hharieta/godesde0/funciones"
 )
 
 func main() {
@@ -29,7 +27,10 @@ func main() {
 	// 	fmt.Printf("%s \n", os)
 	// }
 
-	n, s := ejercicios.Ejercicio1("uih")
+	// n, s := ejercicios.Ejercicio1("uih")
 
-	fmt.Println(n, s)
+	// fmt.Println(n, s)
+
+	funciones.Calculos()
+	funciones.LlamarClosure()
 }
