@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"runtime"
+
+	"github.com/hharieta/godesde0/ejercicios"
 )
 
 func main() {
@@ -13,18 +14,22 @@ func main() {
 
 	// fmt.Println("Estado: ", estado, "Texto: ", texto)
 
-	if os := runtime.GOOS; os == "Linux" || os == "darwin" {
-		fmt.Println("Esto no es Windows: ", os, "god")
-	} else {
-		fmt.Println("Esto es un Windowszzz")
-	}
+	// if os := runtime.GOOS; os == "Linux" || os == "darwin" {
+	// 	fmt.Println("Esto no es Windows: ", os, "god")
+	// } else {
+	// 	fmt.Println("Esto es un Windowszzz")
+	// }
 
-	switch os := runtime.GOOS; os {
-	case "linux":
-		fmt.Println("Esto es Linux")
-	case "darwin":
-		fmt.Println("Esto es Darwin")
-	default:
-		fmt.Printf("%s \n", os)
-	}
+	// switch os := runtime.GOOS; os {
+	// case "linux":
+	// 	fmt.Println("Esto es Linux")
+	// case "darwin":
+	// 	fmt.Println("Esto es Darwin")
+	// default:
+	// 	fmt.Printf("%s \n", os)
+	// }
+
+	n, s := ejercicios.Ejercicio1("uih")
+
+	fmt.Println(n, s)
 }
