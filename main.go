@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/hharieta/godesde0/arreglos"
-	"github.com/hharieta/godesde0/maps"
+	// "github.com/hharieta/godesde0/arreglos"
+	// "github.com/hharieta/godesde0/maps"
+	"github.com/hharieta/godesde0/usuarios"
 )
 
 func main() {
@@ -41,9 +42,11 @@ func main() {
 	// arreglos.MostrarArray()
 	// arreglos.IterarArray()
 
-	arreglos.Slices()
-	arreglos.CapacidadSlices()
-	arreglos.RellenarSlice()
+	// arreglos.Slices()
+	// arreglos.CapacidadSlices()
+	// arreglos.RellenarSlice()
 
-	maps.MostrarMapas()
+	// maps.MostrarMapas()
+
+	usuarios.AltaUsuario()
 }
