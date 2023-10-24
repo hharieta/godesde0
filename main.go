@@ -2,8 +2,8 @@ package main
 
 import (
 	// "github.com/hharieta/godesde0/arreglos"
-	// "github.com/hharieta/godesde0/maps"
-	"github.com/hharieta/godesde0/usuarios"
+	e "github.com/hharieta/godesde0/ejerciciosinter"
+	"github.com/hharieta/godesde0/modelos"
 )
 
 func main() {
@@ -48,5 +48,11 @@ func main() {
 
 	// maps.MostrarMapas()
 
-	usuarios.AltaUsuario()
+	//usuarios.AltaUsuario()
+
+	Gatovsky := new(modelos.Hombre)
+	Mary := new(modelos.Mujer)
+
+	e.HumanoRespirando(Gatovsky)
+	e.HumanoRespirando(Mary)
 }
