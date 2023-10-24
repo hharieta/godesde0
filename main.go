@@ -2,8 +2,9 @@ package main
 
 import (
 	// "github.com/hharieta/godesde0/arreglos"
-	e "github.com/hharieta/godesde0/ejerciciosinter"
-	"github.com/hharieta/godesde0/modelos"
+	// e "github.com/hharieta/godesde0/ejerciciosinter"
+	// "github.com/hharieta/godesde0/modelos"
+	"github.com/hharieta/godesde0/deferpanic"
 )
 
 func main() {
@@ -50,9 +51,12 @@ func main() {
 
 	//usuarios.AltaUsuario()
 
-	Gatovsky := new(modelos.Hombre)
-	Mary := new(modelos.Mujer)
+	// Gatovsky := new(modelos.Hombre)
+	// Mary := new(modelos.Mujer)
 
-	e.HumanoRespirando(Gatovsky)
-	e.HumanoRespirando(Mary)
+	// e.HumanoRespirando(Gatovsky)
+	// e.HumanoRespirando(Mary)
+
+	deferpanic.VerDefer()
+	deferpanic.EjemploPanic()
 }
