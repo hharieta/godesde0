@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/hharieta/godesde0/funciones"
+	"github.com/hharieta/godesde0/arreglos"
 )
 
 func main() {
@@ -31,7 +31,16 @@ func main() {
 
 	// fmt.Println(n, s)
 
-	funciones.Calculos()
-	funciones.LlamarClosure()
-	funciones.Exponente(2)
+	// funciones.Calculos()
+	// funciones.LlamarClosure()
+	// funciones.Exponente(2)
+
+	// arreglos.MostrarArray()
+	// arreglos.IngresarDatosArray(8, 3)
+	// arreglos.MostrarArray()
+	// arreglos.IterarArray()
+
+	arreglos.Slices()
+	arreglos.CapacidadSlices()
+	arreglos.RellenarSlice()
 }
