@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/hharieta/godesde0/arreglos"
+	"github.com/hharieta/godesde0/maps"
 )
 
 func main() {
@@ -43,4 +44,6 @@ func main() {
 	arreglos.Slices()
 	arreglos.CapacidadSlices()
 	arreglos.RellenarSlice()
+
+	maps.MostrarMapas()
 }
