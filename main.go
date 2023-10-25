@@ -4,7 +4,10 @@ import (
 	// "github.com/hharieta/godesde0/arreglos"
 	// e "github.com/hharieta/godesde0/ejerciciosinter"
 	// "github.com/hharieta/godesde0/modelos"
-	"github.com/hharieta/godesde0/deferpanic"
+	//"github.com/hharieta/godesde0/deferpanic"
+	"fmt"
+
+	"github.com/hharieta/godesde0/goroutines"
 )
 
 func main() {
@@ -57,6 +60,14 @@ func main() {
 	// e.HumanoRespirando(Gatovsky)
 	// e.HumanoRespirando(Mary)
 
-	deferpanic.VerDefer()
-	deferpanic.EjemploPanic()
+	// deferpanic.VerDefer()
+	// deferpanic.EjemploPanic()
+	canal1 := make(chan bool)
+	go goroutines.NombreLento("Gatovsky", canal1)
+
+	defer func() {
+		<-canal1
+		fmt.Println("Fin gourutine!!")
+	}()
+
 }
